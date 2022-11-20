@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+   font-family: Roboto, sans-serif; 
+}
+
+body{
+    padding: auto;
+    border: 2px solid red;
+    min-height: 500px;
+}
+
+.main-container{
+    padding: 50px auto;
+    border: 3px solid purple;
+    max-width: 650px;
+    align-items: center;
+    min-height: 400px;
+}
+
+form{
+    justify-items: center;
+}
+
+label {
+    align-content: center;
+}
