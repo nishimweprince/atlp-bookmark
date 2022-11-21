@@ -1,65 +1,68 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>NISHIMWE's Bookmark Manager</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Project name</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Jumbotron heading</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
 
 
-    <div class="main-container md:container md:mx-auto">
-        <div class="mt-10 sm:mt-0">
-            
-        <div class="mt-5 md:col-span-2 md:mt-0">
-            <form action="#" method="POST" class="block justify-center items-center">
-              
-              <div class="overflow-hidden shadow sm:rounded-md">
-                <div class="bg-white px-4 py-5 sm:p-6">
-                  <div class="grid grid-cols-6 gap-6">
-
-                    <div class="col-span-6 sm:col-span-3">
-                      <label for="first-name" class="block text-sm font-medium text-gray-700">Bookmark Name</label>
-                      <input type="text" name="name" id="bookmark-name" autocomplete="given-name" required class="w-full border border-gray-300 px-1 py-1 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500">
-                    </div>
-      
-                    <div class="col-span-6 sm:col-span-3">
-                      <label for="first-name" class="block text-sm font-medium text-gray-700">Address</label>
-                      <div class="mt-1 flex rounded-md shadow-sm">
-                      <span class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500 px-1 py-1">https://</span>
-                      <input type="text" name="address" placeholder="example.com" id="bookmark-address" autocomplete="given-name" required class="w-full border border-gray-300 px-1 py-1 rounded-r-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500">
-                    </div>
-                  </div>
-      
-                    <div class="col-span-6 sm:col-span-3">
-                      <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
-                      <select id="bookmark-category" name="category" autocomplete="bookmark-category" required class="w-full border border-gray-300 px-1 py-1 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500">
-                        <option>Please Select</option>
-                        <option>Social Media</option>
-                        <option>Education</option>
-                        <option>Entertainment</option>
-                        <option>News</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-              </div>
-              <div class="buttons col-span-6 flex justify-center">
-                    <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
-                    <button type="submit" class="justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
-                    </div>
-                    <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
-                    <button type="reset" class="justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Clear</button>
-                    </div>
-                    </div>
-            </form>
-          </div>
-          </div>
-
-    </div>
-    
-    <script src="script.js"></script>
-</body>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
