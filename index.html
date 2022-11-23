@@ -3,7 +3,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
@@ -16,7 +15,7 @@
   <body onload="getBookmarks()">
 
     <div class="container">
-      <div class="header clearfix">
+      <div class="header">
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
@@ -36,18 +35,19 @@
             <input type="text" class="form-control" id="sitename" placeholder="My Website">
           </div>
           
-          <div class="form-group">
-            <label for=""> Site URL </label>
-            <input type="text" class="form-control" id="siteurls" placeholder="example.com">
-          </div>
+          <!-- <div class="form-group">
+            <input type="text" class="form-control" id="siteurl" placeholder="example.com">
+          </div> -->
 
+          <label for=""> Site URL </label>
           <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-            </div>
-            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            <div class="input-group-addon">
+            <span class="input-group-text" id="basic-addon3">https://www.</span>
           </div>
+            <input type="text" class="form-control" id="siteurl" aria-describedby="basic-addon3" placeholder="example.com">
+        </div>
 
+        <label for=""> Category </label>
           <div class="form-group">
             <select class="form-select" id="category" aria-label="Default select example">
               <option>Please choose a category</option>
@@ -155,10 +155,5 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <script type="text/javascript">
-      $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-    </script>
   </body>
 </html>

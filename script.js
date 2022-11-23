@@ -46,7 +46,7 @@ function saveBookmark(e){
     e.preventDefault();
 
     let sitename = document.getElementById("sitename").value;
-    let siteurl = document.getElementById("siteurl").value;
+    let siteurl = "https://www." + document.getElementById("siteurl").value;
     let category = document.getElementById("category").value;
 
     if (category == "Please choose a category"){

@@ -18,6 +18,13 @@ body {
     border: 3px solid purple;
   }
   
+  .input-group>.input-group-addon {
+    flex: 0 0 20%;
+}
+.input-group .input-group-text {
+    width: 100%;
+}
+
   /* Custom page header */
   .header {
     padding-bottom: 20px;
