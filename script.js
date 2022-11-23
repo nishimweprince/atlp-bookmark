@@ -1,7 +1,7 @@
 // Variables
 
 document.getElementById("form-container").addEventListener('submit', saveBookmark);
-document.getElementById('modalbtn').addEventListener('click', showModal);
+// document.getElementById('modalbtn').addEventListener('click', showModal);
 
 let modalWrap = null;
 
@@ -103,8 +103,12 @@ function getBookmarks(){
         let category = bookmarks[i].category;
 
         let li = document.createElement('li');
+        let link = document.createElement('a');
         li.className = "list-group-item";
-        li.innerHTML += name;
+        link.append(name);
+        link.href = url;
+        li.append(link);
+        
 
         if (category == "Social Media"){
             bookmarksSocials.append(li);
@@ -121,6 +125,8 @@ function getBookmarks(){
         else{
             break;
         }
+
+        console.log(li);
     }
 
 
