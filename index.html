@@ -3,18 +3,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Bookmarker</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
+  <body onload="getBookmarks()">
 
     <div class="container">
       <div class="header clearfix">
@@ -65,30 +64,24 @@
 
         <div class="col-lg-6">
 
-          <div class="card" id="socialmedia" style="width: 18rem;">
+          <div class="card" id="socialmedia">
             <img src="socialmedia.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h3 class="card-title">Social Media</h3>
+              <p class="card-text">A collection of your favorite social media websites!</p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+            <ul class="list-group list-group-flush" id="socialmedia-list">
             </ul>
           </div>
 
           
-          <div class="card" id="education" style="width: 18rem;">
+          <div class="card" id="education">
             <img src="education.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h3 class="card-title">Education</h3>
+              <p class="card-text">A collection of your favorite education websites!</p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+            <ul class="list-group list-group-flush" id="education-list">
             </ul>
           </div>
 
@@ -96,30 +89,24 @@
 
       <div class="col-lg-6">
 
-        <div class="card" id="entertainment" style="width: 18rem;">
+        <div class="card" id="entertainment">
           <img src="entertainment.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h3 class="card-title">Entertainment</h3>
+            <p class="card-text">A collection of your favorite entertainment websites to relax!</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+          <ul class="list-group list-group-flush" id="entertainment">
           </ul>
         </div>
 
         
-        <div class="card" id="other" style="width: 18rem;">
+        <div class="card" id="other">
           <img src="other.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h3 class="card-title">Others</h3>
+            <p class="card-text">Any other favorite website that is worth a bookmark!</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+          <ul class="list-group list-group-flush" id="other-list">
           </ul>
         </div>
 
@@ -132,6 +119,7 @@
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
